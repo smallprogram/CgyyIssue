@@ -1,0 +1,59 @@
+name: 问题上报
+description: 报告您使用中遇到的问题以帮助我们改进
+title: "[问题]: "
+labels: 问题
+
+body:
+  - type: markdown
+    id: tips
+    attributes:
+      value: |
+        请按此规范填写，有效的反馈能让我们更好地解决您的问题
+
+  - type: textarea
+    id: department
+    attributes:
+      label: 反馈科室
+      description: 填写反馈科室名称
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 描述您遇到的问题
+      description: 请尽可能简单清晰地描述问题
+    validations:
+      required: true
+
+
+
+  - type: textarea
+    id: pics
+    attributes:
+      label: 截图
+      description: 如果适用，您可以添加屏幕截图以便更好地解释您的问题
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 那个医疗系统相关信息
+      description: 填写相关信息以便更好的确定问题
+      placeholder: |
+        - HIS
+        - LIS
+        - PACS
+        - EMR
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: supplements
+    attributes:
+      label: 其他信息
+      description: 与此问题相关的其他信息
+    validations:
+      required: false
