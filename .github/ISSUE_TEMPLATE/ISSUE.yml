@@ -1,6 +1,6 @@
 name: 问题上报
 description: 报告您使用中遇到的问题以帮助我们改进
-title: "[xxxx年xx月xx日]: "
+title: "[xxxx年xx月xx日][问题标题][反馈科室名称] "
 labels: 问题
 
 body:
@@ -14,7 +14,7 @@ body:
     id: department
     attributes:
       label: 反馈科室
-      description: 填写反馈科室名称
+      description: 填写反馈科室名称，反馈人员，反馈人员电话
     validations:
       required: true
 
